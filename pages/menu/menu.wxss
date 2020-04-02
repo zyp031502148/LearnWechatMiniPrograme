@@ -1,0 +1,33 @@
+/* pages/menu/menu.wxss */
+.search{
+  margin: 20rpx 0rpx;
+  background: #f3f3f3;
+}
+.search icon{
+  margin: 0rpx 30rpx;
+}
+.inline{
+  display: inline-block;
+}
+.search input{
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10rpx 30rpx;
+  vertical-align: text-bottom;
+  margin: 5rpx 0rpx;
+}
+.flexbox{
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction: row; 
+}
+.classBox{
+  margin: 20rpx 10rpx;
+}
+.menuTitle{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+

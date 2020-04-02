@@ -1,0 +1,15 @@
+<!--pages/order/order.wxml-->
+<view class="containBox">
+  <view>
+    <view wx:for="{{orderTab}}" wx:key="tabTitle" bindtap="choiceDrinkMenuIndex" data-wordindex="{{index}}" class="orderTitle {{activeTab==index?'active':''}}">{{item}}</view>
+  </view>
+  <view>
+    <view class='flexClomn'>
+      <view wx:for="{{orderTabContent}}" id="{{item.id}}" wx:key="orderListTitle" class="scrollX {{toview==item.id?'showbox':''}}">
+        <view wx:for="{{item.orderList}}" wx:key="orderContent" >
+          {{item.content}}
+        </view>
+      </view>
+    </view> 
+  </view>
+</view>

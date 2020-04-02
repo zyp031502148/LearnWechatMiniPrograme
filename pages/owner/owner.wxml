@@ -1,0 +1,20 @@
+<!--pages/owner/owner.wxml-->
+<view>
+  <view>个人中心</view>
+    <view>
+      <image src="{{userData.avatarUrl}}" class="userLogo"></image>
+      <text>{{userData.nickName}}</text>
+    </view>
+    <view>
+      <view class="title" catchtap="animate">
+        <text>个人设置</text>
+        <view style="transform:rotate({{degs}}deg);transition:all 0.4;"></view>
+      </view>
+      <view hidden="{{degs==0}}">
+        <block wx:for='{{list}}'>
+          <view>{{item.name}}</view>
+        </block>
+      </view> 
+    </view>  
+    
+</view>

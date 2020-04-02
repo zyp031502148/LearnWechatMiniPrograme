@@ -1,0 +1,16 @@
+<!--pages/menu/menu.wxml-->
+<view class="containBox">
+  <view class="search"><icon class='inline' type="search" size="20"/><input class='inline' auto-focus placeholder="请输入商品名"/></view>
+  <view class="flexbox">
+    <view>
+      <view wx:for="{{drinkTitleList}}" wx:key="tabTitle" bindtap="choiceDrinkMenuIndex" data-wordindex="{{index}}" class="menuTitle">{{item}}</view>
+    </view>
+    <scroll-view scroll-view="true" style="height:88vh" scroll-y="true" scroll-into-view="{{toview}}"  scroll-with-animation="true">
+      <view wx:for="{{drinkList}}" id="{{item[0].category}}" wx:key="menuListTitle">
+        <text wx:for="{{item}}" wx:key="menuItem">
+          {{item.value}}
+        </text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,21 +1,48 @@
 /**index.wxss**/
-.userinfo {
+.contianBox{
+  margin: 0px 20rpx;
+}
+.swiper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.page-body,swiper{
+  width: 100%;
+}
+.swiper-item {
+  width: 100%;
+  height:100%;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.gray{
+  background-color: gray;
+}
+.linkBtn{
+  display: inline-block;
+  margin: 30rpx 40rpx;
+  width: 150rpx; 
+}
+.linkBtn image{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #f3f3f3;
+  display: inline-block;
   border-radius: 50%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.linkBar{
+  width: 100%;
+  height: 150rpx;
+  background: pink;
+  margin: 20rpx 0rpx;
+}
+.linkBar image{
+  width: 100%;
+  height: 100%;
 }
 
-.usermotto {
-  margin-top: 200px;
-}

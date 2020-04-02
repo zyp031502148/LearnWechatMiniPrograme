@@ -1,0 +1,19 @@
+/* pages/order/order.wxss */
+.flexClomn{
+ white-space: nowrap;
+}
+.scrollX{
+  height: 300rpx;
+  width: 100%;
+  display: none;
+}
+.orderTitle{
+  display: inline-block;
+  margin: 5px 10px;
+}
+.showbox{
+  display: block!important;
+}
+.active{
+  border-bottom: 2px solid salmon;
+}

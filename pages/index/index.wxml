@@ -1,13 +1,24 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class='contianBox'>
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="true" interval="2000" duration="500">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view>
+      <navigator url="../eathere/eathere" redirect class='linkBtn'><image src="#"></image><text>店内就餐</text></navigator>
+      <navigator url="#" redirect class='linkBtn'><image src="#"></image><text>自提下单</text></navigator>
+      <navigator url="#" redirect class='linkBtn'><image src="#"></image><text>推荐好友</text></navigator>
+    </view>
+    <view>
+      <navigator url="#" redirect class='linkBar'><image src="#"></image></navigator>
+      <navigator url="#" redirect class='linkBar'><image src="#"></image></navigator>
+    </view>
   </view>
 </view>
